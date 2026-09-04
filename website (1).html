@@ -1,0 +1,243 @@
+<html>
+    <head>
+        <meta charset="utf8">
+        <title>Ignited website</title>
+        <meta name="description" content="my first website">
+        <style>
+            p {
+                background-color: rgba(255, 4, 4, 0.959);
+                border: rgb(0, 0, 0) 10px solid;
+            }
+            body {
+                background-color: rgb(210, 104, 104);
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .parent1 {
+                background-color: rgb(242, 242, 242);
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+            .Div {
+                padding: 80px;
+                background-color: rgb(255, 255, 255);
+            }
+            .Div2 {
+                padding: 80px;
+                background-color: darkblue;
+            }
+            .Div3 {
+                padding: 80px;
+                background-color: red;
+            }
+            .parent2 {
+                background-color: rgb(186, 5, 5);
+                height: 400px;
+                padding: 20px;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+            input:focus {
+                background: lightgrey;
+            }
+            input:valid {
+                background-color: rgb(231, 0, 0);
+            }
+            img {
+                width: 200px;
+                margin: auto;
+                margin-top: 100px;
+            }
+
+            /* --- CSS-only replacements for the old JavaScript --- */
+
+            /* Age check: hide both messages until the user has typed something,
+               then show one or the other based on the number input's min="18" */
+            .age-msg {
+                display: none;
+                font-weight: bold;
+            }
+            #ane:invalid:not(:placeholder-shown) ~ .age-msg.under {
+                display: inline-block;
+                color: darkred;
+            }
+            #ane:valid:not(:placeholder-shown) ~ .age-msg.over {
+                display: inline-block;
+                color: darkgreen;
+            }
+
+            /* Reveal widgets (Surprise / XO / time buttons), built from <details> */
+            details.reveal {
+                display: inline-block;
+                margin: 10px 0;
+            }
+            details.reveal summary {
+                cursor: pointer;
+                padding: 6px 14px;
+                background-color: darkblue;
+                color: white;
+                border-radius: 4px;
+                display: inline-block;
+                list-style: none;
+            }
+            details.reveal summary::-webkit-details-marker {
+                display: none;
+            }
+            details.reveal[open] summary {
+                background-color: rgb(186, 5, 5);
+            }
+            details.reveal p {
+                margin-top: 8px;
+            }
+
+            /* Policy dialog, built from native <dialog>+<form method="dialog"> */
+            dialog#policyDialog {
+                border: 3px solid black;
+                border-radius: 6px;
+                padding: 20px;
+            }
+            dialog#policyDialog::backdrop {
+                background: rgba(0, 0, 0, 0.5);
+            }
+            dialog#policyDialog button {
+                margin-top: 10px;
+                padding: 6px 16px;
+            }
+        </style>
+    </head>
+<body>
+
+<!-- Policy notice: used to be a window.alert(). A native <dialog>, opened
+     by default and closed by a method="dialog" form, needs no JS at all. -->
+<dialog id="policyDialog" open>
+    <form method="dialog">
+        <p>Do you accept the policy?</p>
+        <button>OK</button>
+    </form>
+</dialog>
+
+<h1>i hope that you excited to read my feedback</h1>
+
+<!-- "Surprise" button used to call a JS function z(). A <details> element
+     gives the same "click to reveal" behaviour natively. -->
+<details class="reveal">
+    <summary>Surprise</summary>
+    <p id="abd">Hope you enjoyed reading my feedback!</p>
+</details>
+
+<a href="https://assets.editorial.aetnd.com/uploads/2009/10/adolf-hitler-gettyimages-119505258.jpg" target="_blank"> see the history</a>
+
+<ul>
+<li>flow chart</li>
+<li>html</li>
+<li>orderd sentenses</li>
+<li>home</li>
+</ul>
+
+<table border="1">
+<tr>
+<th>xo</th></tr>
+<tr>
+    <th>Day</th>
+    <th>Subject</th>
+    <th>Time</th>
+</tr>
+
+<tr>
+    <td>Sunday</td>
+    <td>Maths</td>
+    <td rowspan="4">10:30 AM</td>
+</tr>
+
+<tr>
+    <td>Monday</td>
+    <td>Science</td>
+</tr>
+
+<tr>
+    <td>Tuesday</td>
+    <td>Arabic</td>
+</tr>
+
+<tr>
+    <td>Sunday</td>
+    <td>Maths</td>
+</tr>
+<tr>
+    <td colspan="3" rowspan="2">Price Each: 150$</td>
+</tr>
+</table>
+<hr>
+
+<form action="#" method="get">
+    <label for="Name">Name: </label>
+    <input type="text" name="email" id="Name">
+    <br>
+    <label for="phone">phone num </label>
+    <input type="tel" name="phone num" id="phone">
+    <br>
+    <label for="ane">age: </label>
+    <input type="number" id="ane" name="age" min="18" placeholder=" " required>
+    <span class="age-msg under">you are less than 18</span>
+    <span class="age-msg over">your age is 18 or older</span>
+    <br>
+    <button type="submit" id="abx">Sumbit</button>
+    <hr>
+</form>
+
+<embed src="https://www.wikipedia.org/">
+<hr>
+<!-- # embed , details
+     embed is used to show external things like an img or video etc.
+     details is used to make an opening text like a summary that opens to show details -->
+
+<div class="parent1">
+    <div class="Div"></div>
+    <div class="Div2"></div>
+    <div class="Div3"></div>
+    <div class="Div4"></div>
+</div>
+
+<div class="parent2">
+    <div class="fiv"></div>
+    <div class="fiv2">
+        <center><img src="download.png"></center>
+    </div>
+    <div class="fiv3"></div>
+</div>
+
+<div>
+    <div id="xo">Xo website</div>
+
+    <!-- used to be document.write(999 + 0); -->
+    <p>999</p>
+    <br>
+
+    <!-- "XO" button used to be document.write(0 + 0) -->
+    <details class="reveal">
+        <summary>XO</summary>
+        <p>0</p>
+    </details>
+    <br>
+
+    <p id="abc"></p>
+    <br>
+
+    <label for="OS">What IS YOUR OPERATING SYSTEM!!!1!!</label>
+    <br>
+    <label for="Windows">Windows</label>
+    <input type="radio" name="OS" id="Windows" value="Windows">
+    <br>
+    <label for="MacOS">MacOS</label>
+    <input type="radio" name="OS" id="MacOS" value="MacOS">
+    <br>
+    <label for="Linux">Linux</label>
+    <input type="radio" name="OS" id="Linux" value="Linux">
+    <br>
+    <label for="Xo">Xo</label>
+    <input type="radio" name="XO" id="Xo" value="XO">
+</div>
+
+</body>
+</html>
